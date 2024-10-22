@@ -6,5 +6,6 @@ body {
 }
 
 p {
-    color: blue;
+    color: white;
+    opacity: 75;
 }

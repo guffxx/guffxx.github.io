@@ -5,13 +5,8 @@ body {
 h1 {
     font-family: Helvetica, sans-serif;
 }
-p {
-    color: black;
-    opacity: 0.75;
-    font-family: Helvetica, sans-serif;
-}
 
-.about {
+p {
     color: black;
     opacity: 0.75;
     font-family: Helvetica, sans-serif;

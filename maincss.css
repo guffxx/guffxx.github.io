@@ -1,13 +1,27 @@
 body {
-    background-color: grey !important;
+    background-color: lightgrey !important;
 }
 
+h1 {
+    font-family: Helvetica, sans-serif;
+}
 p {
-    color: white;
-    opacity: 75;
+    color: black;
+    opacity: 0.75;
+    font-family: Helvetica, sans-serif;
 }
 
-#about {
-    color: white;
-    opacity: 75;
+.about {
+    color: black;
+    opacity: 0.75;
+    font-family: Helvetica, sans-serif;
+}
+
+li {
+    font-size: large;
+    font-family: Helvetica, sans-serif;
+}
+
+footer {
+    padding-top: 100px;
 }

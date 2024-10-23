@@ -61,13 +61,14 @@ nav ul li a {
     color: white;
     font-size: 18px;
     padding: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.7s ease;
 }
 
 /* Add hover effect */
 nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
+    color: grey;
 }
 
 .content {

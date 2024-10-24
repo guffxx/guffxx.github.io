@@ -24,6 +24,13 @@ header {
 
 h1,
 h3,
+p,
+ul {
+    margin-left: 25px;
+}
+
+h1,
+h3,
 li,
 p,
 footer {
@@ -37,8 +44,22 @@ footer {
     padding: 10px 0;
 }
 
-footer a {
-    color: white;
+.flat {
+    background-color: #4c4b52;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+.flat:hover {
+    background-color: #4c4b52;
+    transition:
+        background-color 0.15s,
+        font-size 0.15s;
+    font-size: 22px;
+}
+
+.flat:active {
+    border-color: #5d91c3;
 }
 
 /* Remove default list styling */

@@ -24,13 +24,16 @@ header {
 
 h1,
 h3,
+h2,
 p,
-ul {
+ul,
+button {
     margin-left: 25px;
 }
 
 h1,
 h3,
+h2,
 li,
 p,
 footer {

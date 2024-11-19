@@ -169,7 +169,7 @@ body {
     background: var(--primary);
     color: var(--bg-dark);
     box-shadow: 0 0 15px var(--primary-glow);
-    transform: scale(1.5) translateX(5px);
+    transform: scale(1.1) translateX(5px);
     z-index: 1000;
 }
 

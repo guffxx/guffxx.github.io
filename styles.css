@@ -351,7 +351,7 @@ body::after {
     display: block;
     margin: 0 auto calc(var(--space) * 2);
     border-radius: var(--radius);
-    animation: smoothPulseGlow 4s ease-in-out infinite;
+    animation: smoothPulseGlow 7s ease-in-out infinite;
     object-fit: contain;
     position: relative;
 }

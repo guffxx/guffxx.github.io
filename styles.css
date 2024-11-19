@@ -58,6 +58,10 @@ body::after {
     padding: calc(var(--space) * 4);
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .container::before {
@@ -353,22 +357,28 @@ body::after {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    aspect-ratio: 16/9;
 }
 
 /* Update media queries for profile image */
+@media (max-width: 1200px) {
+    .profile-image {
+        max-width: min(85vw, 600px);
+        margin: calc(var(--space) * 2) auto;
+    }
+}
+
 @media (max-width: 768px) {
     .profile-image {
-        max-width: min(90vw, 400px);
+        max-width: min(80vw, 400px);
         margin: var(--space) auto;
-        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .profile-image {
-        max-width: 90vw;
+        max-width: 75vw;
         margin: calc(var(--space) * 0.5) auto;
-        width: 85%;
     }
 }
 

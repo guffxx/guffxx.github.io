@@ -166,6 +166,7 @@ body::after {
     display: block;
     margin: 0 auto var(--space);
     box-shadow: 0 0 75px var(--purple-glow);
+    border-radius: var(--radius);
 }
 
 .circular-image {

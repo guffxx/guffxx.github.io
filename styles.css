@@ -164,6 +164,39 @@ body::after {
     z-index: 1001;
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: calc(var(--space) * 1.5) var(--space);
+    position: relative;
+    z-index: 3;
+}
+
+.menu-item {
+    background: var(--glass-bg);
+    color: var(--primary);
+    text-decoration: none;
+    padding: calc(var(--space) * 0.75);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    text-align: center;
+    min-width: 200px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    animation: pulseCommonGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.menu-item:hover {
+    background: var(--text);
+    color: var(--bg-dark);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
+    transform: scale(1.1) translateX(5px);
+    z-index: 1001;
+}
+
 /* ==========================================================================
    6. Images
    ========================================================================== */
@@ -174,7 +207,7 @@ body::after {
     display: block;
     margin: 0 auto var(--space);
     border-radius: var(--radius);
-    animation: pulseGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    animation: pulseGlow 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .circular-image {
@@ -464,6 +497,18 @@ body::after {
 
     .circular-image {
         margin: var(--space) auto;
+    }
+
+    .menu {
+        padding: var(--space);
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .menu-item {
+        width: 100%;
+        min-width: unset;
     }
 }
 

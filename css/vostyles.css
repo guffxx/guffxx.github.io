@@ -1,6 +1,8 @@
 :root {
     --primary: #D4AF37;
     --primary-glow: rgba(212, 175, 55, 0.3);
+    --text-purple: #923ebf;
+    --purple-glow: rgba(146, 62, 191, 0.3);
     --bg: #1b1f23;
     --bg-dark: #141719;
     --text: #ffffff;
@@ -49,16 +51,17 @@ body {
 }
 
 h2 {
-    color: var(--primary);
+    color: var(--text-purple);
     font-size: 1.5rem;
     margin-bottom: var(--space);
-    text-shadow: 0 0 10px var(--primary-glow);
+    text-shadow: 0 0 10px var(--purple-glow);
 }
 
 h3 {
-    color: var(--primary);
+    color: var(--text-purple);
     font-size: 0.9rem;
     margin-bottom: calc(var(--space) / 2);
+    text-shadow: 0 0 10px var(--purple-glow);
 }
 
 .demo-reel, .about-section {

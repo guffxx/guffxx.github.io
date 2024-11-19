@@ -349,14 +349,18 @@ body::after {
     margin: 0 auto var(--space);
     border-radius: var(--radius);
     animation: smoothPulseGlow 4s ease-in-out infinite;
-    object-fit: cover;
+    object-fit: contain;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/* Add to the media queries section */
+/* Update media queries for profile image */
 @media (max-width: 768px) {
     .profile-image {
         max-width: min(90vw, 400px);
         margin: var(--space) auto;
+        width: 90%;
     }
 }
 
@@ -364,6 +368,7 @@ body::after {
     .profile-image {
         max-width: 90vw;
         margin: calc(var(--space) * 0.5) auto;
+        width: 85%;
     }
 }
 

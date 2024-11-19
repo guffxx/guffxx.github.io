@@ -151,3 +151,18 @@ h3 {
         height: 169px;
     }
 }
+
+.demo-item audio {
+    background: var(--bg-dark);
+    border-radius: var(--radius);
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.demo-item audio::-webkit-media-controls-panel {
+    background: var(--bg-dark);
+}
+
+.demo-item audio::-webkit-media-controls-current-time-display,
+.demo-item audio::-webkit-media-controls-time-remaining-display {
+    color: var(--text);
+}

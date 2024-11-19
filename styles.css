@@ -153,13 +153,7 @@ body {
     height: auto;
     display: block;
     margin: 0 auto var(--space);
-    border-radius: var(--radius);
-    box-shadow: 0 0 25px var(--primary-glow);
-    transition: var(--transition);
-}
-
-.profile-image:hover {
-    box-shadow: 0 0 35px var(--primary-glow);
+    box-shadow: 0 0 75px var(--purple-glow);
 }
 
 .flex-container {
@@ -345,4 +339,15 @@ body {
     box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
     transform: scale(1.1) translateX(5px);
     z-index: 1000;
+}
+
+/* Add styles for circular images with glow */
+.circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto calc(var(--space) * 2);
+    display: block;
+    box-shadow: 0 0 50px var(--purple-glow);
 }

@@ -214,6 +214,9 @@ body::after {
 @media (max-width: 768px) {
     .container {
         padding: var(--space);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .content-wrapper {
@@ -222,13 +225,18 @@ body::after {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
-    .welcome-card {
+    .welcome-card,
+    .social-item,
+    .menu-item,
+    .demo-reel,
+    .about-section,
+    .video-samples {
         width: 100%;
         max-width: 400px;
         margin: var(--space) auto;
-        padding: var(--space);
     }
 
     .social-links-top,
@@ -240,20 +248,20 @@ body::after {
         margin: 0 auto;
     }
 
-    .social-item {
-        width: 100%;
+    .video-samples h2 {
+        text-align: center;
+        margin-bottom: var(--space);
     }
 
-    .menu {
-        padding: var(--space);
+    .demo-reel h2,
+    .about-section h3 {
+        text-align: center;
+    }
+
+    .video-container {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
-    }
-    
-    .menu-item {
-        width: 100%;
-        min-width: unset;
     }
 }
 

@@ -356,3 +356,51 @@ body::after {
         margin: calc(var(--space) * 0.5) auto;
     }
 }
+
+/* Add these styles for the video samples section */
+.video-container {
+    display: flex;
+    gap: calc(var(--space) * 2);
+    overflow-x: auto;
+    padding: calc(var(--space) * 2);
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    background: var(--glass-bg);
+    border-radius: var(--radius);
+    backdrop-filter: blur(5px);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.video-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.video-container::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+    border-radius: var(--radius);
+}
+
+.video-container::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: var(--radius);
+}
+
+.video-container iframe {
+    flex: 0 0 400px;
+    height: 225px;
+    border: none;
+    border-radius: var(--radius);
+    scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        padding: var(--space);
+    }
+    
+    .video-container iframe {
+        flex: 0 0 300px;
+        height: 169px;
+    }
+}

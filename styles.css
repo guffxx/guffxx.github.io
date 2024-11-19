@@ -168,7 +168,7 @@ body::after {
     display: block;
     margin: 0 auto var(--space);
     border-radius: var(--radius);
-    animation: pulseGlow 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    animation: pulseGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .circular-image {
@@ -178,7 +178,7 @@ body::after {
     object-fit: cover;
     margin: 0 auto calc(var(--space) * 2);
     display: block;
-    animation: pulseGlow 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    animation: pulseGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 /* Update keyframes with color transition */

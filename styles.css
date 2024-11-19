@@ -265,28 +265,44 @@ body::after {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: var(--space);
+    }
+
+    .content-wrapper {
+        margin: 0 auto;
+        padding: var(--space);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .flex-container {
-        flex-direction: column;  /* Force column layout */
+        flex-direction: column;
         gap: calc(var(--space) * 2);
+        align-items: center;
+        width: 100%;
     }
 
     .demo-reel {
-        order: 1;  /* Place media player first */
+        order: 1;
         width: 100%;
-        max-width: 600px;
+        max-width: 400px;
         margin: 0 auto var(--space);
     }
 
     .about-section {
-        order: 2;  /* Place text content second */
+        order: 2;
         width: 100%;
-        max-width: 600px;
+        max-width: 400px;
         margin: 0 auto;
         padding: var(--space);
     }
 
     .welcome-card {
-        margin: var(--space);
+        width: 100%;
+        max-width: 400px;
+        margin: var(--space) auto;
         padding: var(--space);
     }
 
@@ -294,33 +310,54 @@ body::after {
     .social-links-bottom {
         flex-direction: column;
         align-items: center;
-        padding: calc(var(--space) * 0.5);
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .social-item {
         width: 100%;
-        max-width: 300px;
     }
 
-    .content-wrapper {
-        margin-left: 0;
+    .video-container {
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .video-container iframe {
         flex: 0 0 300px;
         height: 169px;
     }
+
+    .profile-image {
+        max-width: 400px;
+        margin: var(--space) auto;
+    }
+
+    .circular-image {
+        margin: var(--space) auto;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: var(--space);
+        padding: calc(var(--space) * 0.5);
     }
     
     .welcome-text,
     .social-item p {
         font-size: 0.95rem;
         line-height: 1.4;
+    }
+
+    .demo-reel,
+    .about-section,
+    .welcome-card,
+    .social-links-top,
+    .social-links-bottom,
+    .video-container,
+    .profile-image {
+        max-width: 100%;
     }
 }
 

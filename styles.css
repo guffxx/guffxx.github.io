@@ -69,7 +69,7 @@ body {
     background: rgba(20, 23, 25, 0.5);
     padding: calc(var(--space) * 2);
     border-radius: var(--radius);
-    box-shadow: 0 0 100px var(--primary-glow);
+    box-shadow: 0 0 100px rgba(164, 160, 185, 0.2);
     max-width: 800px;
     width: 100%;
     transition: var(--transition);
@@ -122,12 +122,13 @@ body {
     position: relative;
     z-index: 1;
     backdrop-filter: blur(5px);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
 }
 
 .social-item:hover {
     background: var(--text);
     color: var(--bg-dark);
-    box-shadow: 0 0 15px rgba(164, 160, 185, 0.3);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
     transform: scale(1.1) translateX(5px);
     z-index: 1000;
 }
@@ -175,7 +176,7 @@ body {
     background: rgba(20, 23, 25, 0.5);
     padding: calc(var(--space) * 0.75);
     border-radius: var(--radius);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
     backdrop-filter: blur(5px);
     margin-bottom: var(--space);
 }
@@ -213,7 +214,7 @@ body {
     background: rgba(20, 23, 25, 0.5);
     padding: calc(var(--space) * 0.75);
     border-radius: var(--radius);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
     backdrop-filter: blur(5px);
     margin-bottom: var(--space);
 }
@@ -231,7 +232,11 @@ body {
     padding: var(--space);
     scroll-snap-type: x mandatory;
     scrollbar-width: thin;
-    scrollbar-color: var(--primary) var(--bg-dark);
+    scrollbar-color: var(--text) var(--bg-dark);
+    background: rgba(20, 23, 25, 0.5);
+    border-radius: var(--radius);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    backdrop-filter: blur(5px);
 }
 
 .video-container iframe {
@@ -329,12 +334,13 @@ body {
     backdrop-filter: blur(5px);
     font-size: 1.1rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
 }
 
 .menu-item:hover {
     background: var(--text);
     color: var(--bg-dark);
-    box-shadow: 0 0 15px rgba(164, 160, 185, 0.3);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
     transform: scale(1.1) translateX(5px);
     z-index: 1000;
 }

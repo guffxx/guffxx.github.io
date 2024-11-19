@@ -97,12 +97,13 @@ body {
 }
 
 .welcome-text {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.3rem;
+    line-height: 1.8;
     color: var(--text);
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     opacity: 0.9;
+    letter-spacing: 0.5px;
 }
 
 /* Social Sidebar */
@@ -246,7 +247,7 @@ body {
     font-size: 1.3rem;
     line-height: 1.8;
     color: var(--text);
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     opacity: 0.9;
     letter-spacing: 0.5px;
@@ -266,5 +267,26 @@ body {
     .welcome-text {
         font-size: 1.1rem;
         line-height: 1.6;
+    }
+} 
+
+/* Add specific styling for about-section */
+.about-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: calc(var(--space) * 2);
+}
+
+/* Update media query for smaller screens */
+@media (max-width: 768px) {
+    .about-section {
+        padding: var(--space);
+        margin: 0 var(--space);
+    }
+    
+    .welcome-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding: 0 var(--space);
     }
 } 

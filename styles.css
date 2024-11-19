@@ -1,7 +1,7 @@
 /* Theme Variables */
 :root {
     --primary: ##a4a0b9;
-    --primary-glow: rgba(10, 50, 112, 0.3);
+    --primary-glow: #a4a0b9(10, 50, 112, 0.3);
     --text-purple: #923ebf;
     --purple-glow: rgba(146, 62, 191, 0.3);
     --bg: #1b1f23;
@@ -287,4 +287,42 @@ body {
         font-size: 0.95rem;
         line-height: 1.4;
     }
+}
+
+/* Update menu styles to match social links */
+.menu {
+    padding: calc(var(--space) * 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    background: rgba(20, 23, 25, 0.5);
+    color: var(--primary);
+    text-decoration: none;
+    padding: calc(var(--space) * 0.75);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    text-align: center;
+    min-width: 200px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    font-size: 1.1rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item:hover {
+    background: var(--primary);
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px var(--primary-glow);
+    transform: scale(1.1) translateX(5px);
+    z-index: 1000;
 }

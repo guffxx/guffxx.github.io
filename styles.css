@@ -91,13 +91,13 @@ body::after {
     background: var(--glass-bg);
     padding: calc(var(--space) * 2);
     border-radius: var(--radius);
-    box-shadow: 0 0 100px rgba(164, 160, 185, 0.2);
     max-width: 800px;
     width: 100%;
     transition: var(--transition);
     position: relative;
     z-index: 1;
     backdrop-filter: blur(5px);
+    animation: pulseCommonGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .welcome-section h1 {
@@ -148,7 +148,7 @@ body::after {
     position: relative;
     z-index: 1;
     backdrop-filter: blur(5px);
-    box-shadow: var(--common-glow);
+    animation: pulseCommonGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .menu-item:hover,
@@ -263,8 +263,8 @@ body::after {
 .video-container {
     background: var(--glass-bg);
     border-radius: var(--radius);
-    box-shadow: var(--common-glow);
     backdrop-filter: blur(5px);
+    animation: pulseCommonGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .demo-reel {
@@ -290,11 +290,10 @@ body::after {
 .demo-item iframe {
     border: none;
     border-radius: var(--radius);
-    box-shadow: 0 0 15px var(--primary-glow);
     transition: var(--transition);
     height: 85px;
     width: 100%;
-    max-width: 350px;
+    animation: pulseCommonGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .video-container {
@@ -312,7 +311,7 @@ body::after {
     height: 225px;
     border: none;
     border-radius: var(--radius);
-    box-shadow: 0 0 15px var(--primary-glow);
+    animation: pulseCommonGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     scroll-snap-align: start;
 }
 
@@ -514,4 +513,71 @@ body::after {
     background: var(--glass-bg);
     backdrop-filter: blur(5px);
     margin-top: auto;
+}
+
+/* Add new keyframes for non-purple glow */
+@keyframes pulseCommonGlow {
+    0% {
+        box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    }
+    5% {
+        box-shadow: 0 0 55px rgba(164, 160, 185, 0.21);
+    }
+    10% {
+        box-shadow: 0 0 60px rgba(164, 160, 185, 0.22);
+    }
+    15% {
+        box-shadow: 0 0 65px rgba(164, 160, 185, 0.23);
+    }
+    20% {
+        box-shadow: 0 0 70px rgba(164, 160, 185, 0.24);
+    }
+    25% {
+        box-shadow: 0 0 75px rgba(164, 160, 185, 0.25);
+    }
+    30% {
+        box-shadow: 0 0 80px rgba(164, 160, 185, 0.26);
+    }
+    35% {
+        box-shadow: 0 0 85px rgba(164, 160, 185, 0.27);
+    }
+    40% {
+        box-shadow: 0 0 90px rgba(164, 160, 185, 0.28);
+    }
+    45% {
+        box-shadow: 0 0 95px rgba(164, 160, 185, 0.29);
+    }
+    50% {
+        box-shadow: 0 0 100px rgba(164, 160, 185, 0.3);
+    }
+    55% {
+        box-shadow: 0 0 95px rgba(164, 160, 185, 0.29);
+    }
+    60% {
+        box-shadow: 0 0 90px rgba(164, 160, 185, 0.28);
+    }
+    65% {
+        box-shadow: 0 0 85px rgba(164, 160, 185, 0.27);
+    }
+    70% {
+        box-shadow: 0 0 80px rgba(164, 160, 185, 0.26);
+    }
+    75% {
+        box-shadow: 0 0 75px rgba(164, 160, 185, 0.25);
+    }
+    80% {
+        box-shadow: 0 0 70px rgba(164, 160, 185, 0.24);
+    }
+    85% {
+        box-shadow: 0 0 65px rgba(164, 160, 185, 0.23);
+    }
+    90% {
+        box-shadow: 0 0 60px rgba(164, 160, 185, 0.22);
+    }
+    95% {
+        box-shadow: 0 0 55px rgba(164, 160, 185, 0.21);
+    }
+    100% {
+        box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    }
 }

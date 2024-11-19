@@ -246,6 +246,8 @@ body::after {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
+        padding: calc(var(--space) * 0.5);
+        gap: calc(var(--space) * 0.75);
     }
 
     .video-samples h2 {

@@ -398,15 +398,40 @@ body::after {
 .menu {
     display: flex;
     justify-content: center;
-    padding: calc(var(--space) * 1.5) calc(var(--space) * 0.5) calc(var(--space) * 0.5);  /* Increased top padding */
+    padding: calc(var(--space) * 1.5) calc(var(--space) * 0.5) calc(var(--space) * 0.5);
     position: relative;
     z-index: 3;
+    width: 100%;
 }
 
 .menu-content {
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        padding: calc(var(--space) * 1.5) var(--space);
+    }
+    
+    .menu-content {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .menu-item {
+        width: 100%;
+        min-width: unset;
+    }
 }
 
 /* Add footer styles */

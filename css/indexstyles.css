@@ -25,6 +25,8 @@ body {
     background: var(--bg-dark);
     padding: var(--space);
     box-shadow: 0 0 15px var(--primary-glow);
+    position: relative;
+    
 }
 
 .menu-content {

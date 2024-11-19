@@ -284,6 +284,8 @@ body::after {
         gap: calc(var(--space) * 2);
         align-items: center;
         width: 100%;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .demo-reel {
@@ -291,6 +293,7 @@ body::after {
         width: 100%;
         max-width: 400px;
         margin: 0 auto var(--space);
+        text-align: center;
     }
 
     .about-section {
@@ -299,6 +302,34 @@ body::after {
         max-width: 400px;
         margin: 0 auto;
         padding: var(--space);
+        text-align: center;
+    }
+
+    .video-samples {
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .video-container {
+        max-width: 400px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .voice-demos {
+        align-items: center;
+    }
+
+    .demo-item {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .welcome-text {
+        text-align: center;
+        margin: var(--space) auto;
     }
 
     .welcome-card {

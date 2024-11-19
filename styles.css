@@ -1,7 +1,7 @@
 /* Theme Variables */
 :root {
     --primary: #0169b1;
-    --primary-glow: rgba(10, 93, 141, 0.3);
+    --primary-glow: rgba(0, 51, 102, 0.3);
     --text-purple: #923ebf;
     --purple-glow: rgba(146, 62, 191, 0.3);
     --bg: #1b1f23;
@@ -103,7 +103,7 @@ body {
 /* Welcome Section */
 .welcome-section {
     text-align: center;
-    padding: calc(var(--space) * 2);
+    padding: calc(var(--space) * 1.5) 0;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -112,7 +112,7 @@ body {
     color: var(--primary);
     font-size: 2.5rem;
     margin-bottom: calc(var(--space) * 1.5);
-    text-shadow: 0 0 15px var(--primary-glow);
+    text-shadow: 0 0 25px var(--primary-glow);
 }
 
 .welcome-text {
@@ -126,31 +126,23 @@ body {
 }
 
 /* Social Sidebar */
-.social-sidebar {
-    width: 250px;
-    padding: var(--space);
-    position: fixed;
-    left: 0;
-    top: 60px;
-    bottom: 0;
-    background: var(--bg-dark);
-    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
-}
-
-.social-links-stack {
+.social-links-top,
+.social-links-bottom {
     display: flex;
-    flex-direction: column;
-    gap: calc(var(--space) * 0.75);
+    gap: calc(var(--space) * 1.5);
+    justify-content: center;
+    padding: var(--space);
 }
 
 .social-item {
-    background: var(--bg);
+    background: var(--bg-dark);
     color: var(--primary);
     text-decoration: none;
     padding: calc(var(--space) * 0.75);
     border-radius: var(--radius);
     transition: var(--transition);
     text-align: left;
+    min-width: 200px;
 }
 
 .social-item:hover {
@@ -214,12 +206,18 @@ body {
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .social-sidebar {
-        position: relative;
-        width: 100%;
-        top: 0;
+    .social-links-top,
+    .social-links-bottom {
+        flex-direction: column;
+        align-items: center;
+        padding: calc(var(--space) * 0.5);
     }
-    
+
+    .social-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
     .content-wrapper {
         margin-left: 0;
         flex-direction: column;
@@ -244,21 +242,23 @@ body {
     background: var(--bg-dark);
     padding: calc(var(--space) * 2);
     border-radius: var(--radius);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 100px var(--primary-glow);
     max-width: 800px;
     width: 100%;
     transition: var(--transition);
+    position: relative;
+    z-index: 1;
 }
 
 .welcome-card:hover {
-    box-shadow: 0 0 35px var(--primary-glow);
+    box-shadow: 0 0 100px var(--primary-glow);
 }
 
 .welcome-section h1 {
     color: var(--primary);
     font-size: 3rem;
     margin-bottom: calc(var(--space) * 1.5);
-    text-shadow: 0 0 15px var(--primary-glow);
+    text-shadow: 0 0 25px var(--primary-glow);
     letter-spacing: 2px;
 }
 

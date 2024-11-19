@@ -9,92 +9,75 @@
 <body>
     <main class="container">
         <section class="profile-section">
-            <div class="profile-image">
-                <img src="assets/images/DEFAULT.png" alt="Voice Actor Profile Picture">
-            </div>
+            <img src="assets/images/DEFAULT.png" alt="Voice Actor Profile Picture" class="profile-image">
         </section>
 
-        <section class="demo-reel">
-            <h2>Voice Demos</h2>
-            <div class="voice-demos">
-                <div class="demo-item">
-                    <h3>Commercial Demo</h3>
-                    <audio controls>
-                        <source src="demo1.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+        <div class="content-wrapper">
+            <section class="demo-reel">
+                <h2>Voice Demos</h2>
+                <div class="voice-demos">
+                    <div class="demo-item">
+                        <h3>Commercial Demo</h3>
+                        <audio controls src="demo1.mp3"></audio>
+                    </div>
+                    <div class="demo-item">
+                        <h3>Character Voice 2</h3>
+                        <audio controls src="demo3.mp3"></audio>
+                    </div>
+                    <div class="demo-item">
+                        <h3>Narration Sample</h3>
+                        <audio controls src="demo4.mp3"></audio>
+                    </div>
+                    <div class="demo-item">
+                        <h3>Animation Demo</h3>
+                        <audio controls src="demo5.mp3"></audio>
+                    </div>
                 </div>
+            </section>
+
+            <section class="about-section">
+                <h2>About Me</h2>
+                <p>Welcome! I'm a versatile voice actor with years of experience in commercials, animation, video games, and various types of narration. My voice has been described as warm, engaging, and adaptable to various character types.</p>
                 
-                <div class="demo-item">
-                    <h3>Character Voice 1</h3>
-                    <audio controls>
-                        <source src="https://youtu.be/Tw7bIEQyrl4?si=sr7Y8MppbRJ0GOZB" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+                <div class="skills">
+                    <h3>Specialties</h3>
+                    <ul>
+                        <li>Commercial Narration</li>
+                        <li>Character Voices</li>
+                        <li>Animation</li>
+                        <li>Video Game Voices</li>
+                        <li>Corporate Narration</li>
+                    </ul>
                 </div>
 
-                <div class="demo-item">
-                    <h3>Character Voice 2</h3>
-                    <audio controls>
-                        <source src="demo3.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+                <div class="connect">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://bsky.app/profile/iamguff.bsky.social" target="_blank" class="social-link">Bluesky</a>
+                        <a href="https://www.linkedin.com/in/davidguffre/" target="_blank" class="social-link">LinkedIn</a>
+                    </div>
                 </div>
-
-                <div class="demo-item">
-                    <h3>Narration Sample</h3>
-                    <audio controls>
-                        <source src="demo4.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-
-                <div class="demo-item">
-                    <h3>Animation Demo</h3>
-                    <audio controls>
-                        <source src="demo5.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-section">
-            <h2>About Me</h2>
-            <p>Welcome! I'm a versatile voice actor with experience in commercials, animation, video games, and narration. My voice has been described as warm, engaging, and adaptable to various character types.</p>
-            <div class="skills">
-                <h3>Specialties</h3>
-                <ul>
-                    <li>Commercial Narration</li>
-                    <li>Character Voices</li>
-                    <li>Animation</li>
-                    <li>Video Game Voices</li>
-                    <li>Corporate Narration</li>
-                </ul>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <section class="video-playlist">
             <h2>Video Samples</h2>
-            <div class="video-grid">
-                <iframe src="https://www.youtube.com/embed/videoseries?list=PLvKWeXQAQPzwXsXdVg2zaDJvJoOoDV-ch" 
-                    title="Voice Acting Samples"
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </section>
-
-        <section class="connect-section">
-            <h2>Connect With Me</h2>
-            <div class="social-links">
-                <a href="https://bsky.app/profile/iamguff.bsky.social" target="_blank" class="social-link">
-                    <span>Bluesky</span>
-                </a>
-                <a href="https://www.linkedin.com/in/davidguffre/" target="_blank" class="social-link">
-                    <span>LinkedIn</span>
-                </a>
+            <div class="video-container">
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/Wgu0kXS3WT8" 
+                        title="Voice Acting Sample 1"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/3TEX7Xptgxc" 
+                        title="Voice Acting Sample 2"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/alIgd3bvIQ4" 
+                        title="Voice Acting Sample 3"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </section>
     </main>

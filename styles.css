@@ -172,11 +172,7 @@ body::after {
 .circular-image {
     width: 200px;
     height: 200px;
-    clip-path: polygon(
-        50% 5%,  /* Top point */
-        95% 90%, /* Bottom right */
-        5% 90%   /* Bottom left */
-    );
+    border-radius: 50%;
     object-fit: cover;
     margin: 0 auto calc(var(--space) * 2);
     display: block;

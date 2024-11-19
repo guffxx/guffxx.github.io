@@ -165,7 +165,7 @@ body::after {
     height: auto;
     display: block;
     margin: 0 auto var(--space);
-    box-shadow: 0 0 75px var(--purple-glow);
+    box-shadow: 0 0 100px rgba(146, 62, 191, 0.5);
     border-radius: var(--radius);
 }
 
@@ -176,7 +176,7 @@ body::after {
     object-fit: cover;
     margin: 0 auto calc(var(--space) * 2);
     display: block;
-    box-shadow: 0 0 50px var(--purple-glow);
+    box-shadow: 0 0 100px rgba(146, 62, 191, 0.5);
 }
 
 /* Content Sections */

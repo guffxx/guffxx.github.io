@@ -1,7 +1,7 @@
 /* Theme Variables */
 :root {
-    --primary: #0169b1;
-    --primary-glow: rgba(0, 51, 102, 0.3);
+    --primary: #06214c;
+    --primary-glow: rgba(6, 33, 76, 0.3);
     --text-purple: #923ebf;
     --purple-glow: rgba(146, 62, 191, 0.3);
     --bg: #1b1f23;

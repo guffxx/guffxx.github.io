@@ -152,7 +152,7 @@ body {
 }
 
 .social-item {
-    background: var(--bg-dark);
+    background: rgba(20, 23, 25, 0.5);
     color: var(--primary);
     text-decoration: none;
     padding: calc(var(--space) * 0.75);
@@ -162,6 +162,7 @@ body {
     min-width: 200px;
     position: relative;
     z-index: 1;
+    backdrop-filter: blur(5px);
 }
 
 .social-item:hover {
@@ -176,11 +177,13 @@ body {
     color: inherit;
     margin-bottom: calc(var(--space) * 0.25);
     font-size: 1.1rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .social-item p {
-    opacity: 0.8;
+    opacity: 0.9;
     font-size: 0.9rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Voice Over Page */

@@ -158,7 +158,7 @@ body {
     padding: calc(var(--space) * 0.75);
     border-radius: var(--radius);
     transition: var(--transition);
-    text-align: left;
+    text-align: center;
     min-width: 200px;
     position: relative;
     z-index: 1;
@@ -178,12 +178,14 @@ body {
     margin-bottom: calc(var(--space) * 0.25);
     font-size: 1.1rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .social-item p {
     opacity: 0.9;
     font-size: 0.9rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 /* Voice Over Page */

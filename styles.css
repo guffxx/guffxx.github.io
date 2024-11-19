@@ -40,8 +40,6 @@ body {
 }
 
 .profile-image {
-    display: flex;
-    justify-content: center;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -62,98 +60,29 @@ body {
                 0 0 10px var(--primary-color);
 }
 
-.profile-info h1 {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 0 10px var(--primary-glow);
-}
-
-.demo-reel {
-    flex: 0 1 calc(33% - 1rem);
+.demo-reel, .about-section {
+    flex: 1;
     padding: 1rem 2rem;
-    height: fit-content;
 }
 
-.demo-reel h2, .about-section h2 {
+h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: var(--primary-color);
     text-shadow: 0 0 10px var(--primary-glow);
 }
 
-.audio-player {
-    margin-top: 1rem;
+.demo-item {
+    margin-bottom: 1.5rem;
 }
 
-.player-controls {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.control-btn {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 15px var(--primary-glow);
-    transition: all 0.3s ease;
-}
-
-.control-btn:hover {
-    box-shadow: 0 0 20px var(--primary-glow);
-    transform: translateY(-1px);
-}
-
-.progress-bar {
-    flex-grow: 1;
-    height: 10px;
-    background-color: rgba(20, 23, 25, 0.7);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.progress {
-    width: 0%;
-    height: 100%;
-    background-color: var(--primary-color);
-    transition: width 0.1s linear;
-    box-shadow: 0 0 10px var(--primary-glow);
-}
-
-.playlist {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.track {
-    padding: 0.75rem;
-    background-color: rgba(20, 23, 25, 0.7);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.demo-item h3 {
     margin-bottom: 0.5rem;
+    color: var(--primary-color);
 }
 
-.track:hover {
-    background-color: var(--primary-color);
-    box-shadow: 0 0 15px var(--primary-glow);
-    transform: translateX(5px);
-}
-
-.track.active {
-    background-color: var(--primary-color);
-    box-shadow: 0 0 15px var(--primary-glow);
-}
-
-.about-section {
-    flex: 1;
-    padding: 1rem 2rem;
+.demo-item audio {
+    width: 100%;
 }
 
 .skills h3 {
@@ -166,19 +95,27 @@ body {
     columns: 2;
 }
 
-@media (max-width: 768px) {
-    .profile-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .skills ul {
-        columns: 1;
-    }
-    
-    .demo-reel, .about-section {
-        flex: 1 1 100%;
-    }
+.video-playlist {
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.video-grid {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-grid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
 }
 
 .connect-section {
@@ -192,13 +129,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     max-width: 1200px;
-}
-
-.connect-section h2 {
-    color: var(--primary-color);
-    margin-bottom: 0.75rem;
-    text-shadow: 0 0 10px var(--primary-glow);
-    font-size: 1.2rem;
 }
 
 .social-links {
@@ -215,12 +145,6 @@ body {
     text-decoration: none;
     color: var(--light-text);
     transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.social-link img {
-    width: 24px;
-    height: 24px;
 }
 
 .social-link:hover {
@@ -234,39 +158,26 @@ body {
 }
 
 @media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .skills ul {
+        columns: 1;
+    }
+    
+    .demo-reel, .about-section {
+        flex: 1 1 100%;
+    }
+
     .connect-section {
         padding: 0.75rem;
         width: 100%;
         left: 0;
         transform: none;
     }
-}
 
-.video-playlist {
-    padding: 2rem;
-    background: #f5f5f5;
-    border-radius: 8px;
-    margin: 2rem 0;
-}
-
-.video-grid {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-.video-grid iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-}
-
-@media (max-width: 768px) {
     .video-playlist {
         padding: 1rem;
     }

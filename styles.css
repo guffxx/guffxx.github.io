@@ -322,3 +322,18 @@ body::after {
         line-height: 1.4;
     }
 }
+
+/* Update menu padding */
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: calc(var(--space) * 1.5) calc(var(--space) * 0.5) calc(var(--space) * 0.5);  /* Increased top padding */
+    position: relative;
+    z-index: 3;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

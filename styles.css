@@ -329,3 +329,30 @@ body::after {
         margin: 0 auto var(--space);
     }
 }
+
+/* Update profile image styles */
+.profile-image {
+    width: 100%;
+    max-width: min(90vw, 700px);
+    height: auto;
+    display: block;
+    margin: 0 auto var(--space);
+    border-radius: var(--radius);
+    animation: pulseGlow 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    object-fit: cover;
+}
+
+/* Add to the media queries section */
+@media (max-width: 768px) {
+    .profile-image {
+        max-width: min(90vw, 400px);
+        margin: var(--space) auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image {
+        max-width: 90vw;
+        margin: calc(var(--space) * 0.5) auto;
+    }
+}

@@ -268,4 +268,60 @@ h3 {
     .social-links-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Content Sections */
+.content-section {
+    padding: calc(var(--space) * 2) 0;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 60px; /* Accounts for fixed nav bar */
+}
+
+.content-section h2 {
+    margin-bottom: var(--space);
+}
+
+.content-section p {
+    margin-bottom: var(--space);
+}
+
+.external-link {
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: none;
+    padding: calc(var(--space) * 0.75) var(--space);
+    border-radius: var(--radius);
+    background: var(--bg-dark);
+    transition: var(--transition);
+}
+
+.external-link:hover {
+    background: var(--primary);
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px var(--primary-glow);
+    transform: translateY(-2px);
+}
+
+/* Embed Containers */
+.embed-container {
+    width: 100%;
+    height: calc(100vh - 200px);
+    margin-top: var(--space);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.social-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: var(--bg-dark);
 } 

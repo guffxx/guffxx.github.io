@@ -97,6 +97,7 @@ body::after {
     z-index: 1;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    animation: breatheGlow 5s ease-in-out infinite;
 }
 
 .welcome-section h1 {
@@ -320,6 +321,7 @@ body::after {
     padding: calc(var(--space) * 0.75);
     backdrop-filter: blur(5px);
     box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    animation: breatheGlow 5s ease-in-out infinite;
 }
 
 .about-section {
@@ -330,6 +332,7 @@ body::after {
     padding: calc(var(--space) * 2);
     backdrop-filter: blur(5px);
     box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    animation: breatheGlow 5s ease-in-out infinite;
 }
 
 /* Update media query for mobile responsiveness */
@@ -490,5 +493,26 @@ body::after {
     .section-label {
         text-align: center;
         margin-top: calc(var(--space) * 0.5);
+    }
+}
+
+/* Add breathing glow effect to text boxes */
+.welcome-card,
+.about-section,
+.demo-reel {
+    background: var(--glass-bg);
+    border-radius: var(--radius);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    animation: breatheGlow 5s ease-in-out infinite;
+}
+
+/* Add new breathing glow animation */
+@keyframes breatheGlow {
+    0%, 100% {
+        box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 70px rgba(164, 160, 185, 0.3);
     }
 }

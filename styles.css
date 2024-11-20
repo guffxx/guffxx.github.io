@@ -191,8 +191,7 @@ body::after {
     border-radius: 50%;
     object-fit: cover;
     position: relative;
-    margin: 0 auto calc(var(--space) * 2);
-    display: block;
+    margin: 0;
     animation: smoothPulseGlow 4s ease-in-out infinite;
 }
 
@@ -245,6 +244,7 @@ body::after {
 
     .social-links-top,
     .social-links-bottom {
+        transform: translateX(0);
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -420,5 +420,73 @@ body::after {
     .video-container iframe {
         flex: 0 0 300px;
         height: 169px;
+    }
+}
+
+/* Add new styles for the top section layout */
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--space) * 2);
+    margin-bottom: calc(var(--space) * 2);
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Update media query for mobile */
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        gap: var(--space);
+    }
+    
+    .circular-image {
+        margin: 0 auto calc(var(--space) * 2);
+    }
+}
+
+/* Add styles for the top buttons container */
+.top-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space) * 0.75);
+}
+
+.top-buttons .social-item {
+    min-width: 200px;
+    max-width: 200px;
+    padding: calc(var(--space) * 0.75);
+    width: 100%;
+}
+
+/* Update media query */
+@media (max-width: 768px) {
+    .top-buttons .social-item {
+        width: 100%;
+        max-width: 400px;
+        min-width: unset;
+    }
+}
+
+/* Add styles for the section label */
+.top-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space) * 0.75);
+}
+
+.section-label {
+    color: var(--primary);
+    font-size: 1.1rem;
+    text-shadow: var(--text-shadow);
+    margin-bottom: calc(var(--space) * 0.5);
+}
+
+/* Update media query */
+@media (max-width: 768px) {
+    .section-label {
+        text-align: center;
+        margin-top: calc(var(--space) * 0.5);
     }
 }

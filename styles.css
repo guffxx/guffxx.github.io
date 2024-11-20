@@ -191,7 +191,7 @@ body::after {
     border-radius: 50%;
     object-fit: cover;
     position: relative;
-    margin: 0;
+    margin: 50px 0 0 0;
     animation: smoothPulseGlow 4s ease-in-out infinite;
 }
 
@@ -268,6 +268,10 @@ body::after {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
+    }
+
+    .circular-image {
+        margin: 5px auto calc(var(--space) * 2);
     }
 }
 

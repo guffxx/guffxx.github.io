@@ -122,8 +122,8 @@ body::after {
 .social-links-bottom {
     display: flex;
     justify-content: center;
-    gap: calc(var(--space) * 1.5);
-    padding: calc(var(--space) * 1.5);
+    gap: calc(var(--space) * 0.5);
+    padding: calc(var(--space) * 0.5);
     position: relative;
     z-index: 3;
 }
@@ -132,7 +132,7 @@ body::after {
     background: var(--glass-bg);
     color: var(--primary);
     text-decoration: none;
-    padding: calc(var(--space) * 0.75);
+    padding: calc(var(--space) * 0.5) calc(var(--space) * 0.75);
     border-radius: var(--radius);
     transition: var(--transition);
     text-align: center;
@@ -250,8 +250,8 @@ body::after {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
-        padding: calc(var(--space) * 0.5);
-        gap: calc(var(--space) * 0.75);
+        padding: calc(var(--space) * 0.125);
+        gap: calc(var(--space) * 0.1875);
     }
 
     .video-samples h2 {
@@ -450,22 +450,20 @@ body::after {
 .top-buttons {
     display: flex;
     flex-direction: column;
-    gap: calc(var(--space) * 0.75);
+    gap: calc(var(--space) * 0.5);
 }
 
-.top-buttons .social-item {
-    min-width: 200px;
-    max-width: 200px;
-    padding: calc(var(--space) * 0.75);
-    width: 100%;
-}
 
 /* Update media query */
 @media (max-width: 768px) {
+    .top-buttons {
+        width: 100%;
+        align-items: center;
+    }
+    
     .top-buttons .social-item {
         width: 100%;
         max-width: 400px;
-        min-width: unset;
     }
 }
 

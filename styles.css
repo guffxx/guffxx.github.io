@@ -303,6 +303,47 @@ body::after {
     text-shadow: var(--text-shadow);
 }
 
+/* Add menu styles */
+.menu {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: var(--space);
+    backdrop-filter: blur(5px);
+    background: var(--glass-bg);
+}
+
+.menu-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 var(--space);
+}
+
+.menu-item {
+    background: var(--glass-bg);
+    color: var(--primary);
+    text-decoration: none;
+    padding: calc(var(--space) * 0.75);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    text-align: center;
+    min-width: 100px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+}
+
+.menu-item:hover {
+    background: var(--text);
+    color: var(--bg-dark);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
+    transform: scale(1.1);
+    z-index: 1001;
+}
+
 /* ==========================================================================
    5. Animations
    ========================================================================== */

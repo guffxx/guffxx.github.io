@@ -460,35 +460,42 @@ body::after {
         line-height: 1.4;
     }
     .icon-container {
-        gap: calc(var(--space));
+        gap: calc(var(--space) * 0.5);
+        max-width: 160px;
     }
     
     .tech-icon {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 }
 
 /* Icon Container */
 .icon-container {
     display: flex;
-    gap: calc(var(--space) * 1.5);
+    flex-wrap: wrap;
+    gap: calc(var(--space));
     justify-content: center;
-    margin: calc(var(--space) * 1.5) 0;
+    margin: calc(var(--space)) 0;
+    max-width: 200px;
 }
 
 .tech-icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     opacity: 0.8;
     transition: var(--transition);
     filter: brightness(0) invert(1);
     animation: smoothPulseGlow 4s ease-in-out infinite;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .tech-icon:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.2);
     filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
 }
 

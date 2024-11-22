@@ -499,12 +499,13 @@ body::after {
     height: 30px;
     opacity: 0.8;
     transition: var(--transition);
-    box-shadow: 0 0 15px rgba(146, 62, 191, 0.3);
+    filter: drop-shadow(0 0 8px rgba(146, 62, 191, 0.4));
 }
 
 .tech-icon-wrapper:hover .tech-icon {
     transform: scale(1.2);
-    box-shadow: 0 0 15px rgba(146, 62, 191, 0.3);
+    filter: drop-shadow(0 0 12px rgba(146, 62, 191, 0.6))
+           drop-shadow(0 0 4px rgba(146, 62, 191, 0.4));
 }
 
 .tech-icon-wrapper:hover::after {

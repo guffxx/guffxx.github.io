@@ -485,7 +485,6 @@ body::after {
     height: 24px;
     opacity: 0.8;
     transition: var(--transition);
-    filter: brightness(0) invert(1);
     animation: smoothPulseGlow 4s ease-in-out infinite;
     border: none;
     outline: none;
@@ -496,6 +495,6 @@ body::after {
 .tech-icon:hover {
     opacity: 1;
     transform: scale(1.2);
-    filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
 }
 

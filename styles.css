@@ -168,7 +168,7 @@ body::after {
 .tech-icon-wrapper {
     position: relative;
     cursor: pointer;
-    padding: 4px;
+    padding: 2px 4px;
 }
 
 .tech-icon {

@@ -181,6 +181,7 @@ body::after {
     text-decoration: none;
     transition: var(--transition);
     z-index: 1;
+    border: 2px solid transparent;
 }
 
 .social-item:hover {
@@ -189,6 +190,8 @@ body::after {
     color: var(--bg-dark);
     transform: scale(1.1) translateX(5px);
     z-index: 1001;
+    border: 2px solid var(--text-purple);
+    animation: borderAnimation 2s infinite;
 }
 
 /* Social Links */
@@ -332,6 +335,7 @@ body::after {
     z-index: 1;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    border: 2px solid transparent;
 }
 
 .menu-item:hover {
@@ -340,6 +344,8 @@ body::after {
     box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
     transform: scale(1.1);
     z-index: 1001;
+    border: 2px solid var(--text-purple);
+    animation: borderAnimation 2s infinite;
 }
 
 /* ==========================================================================
@@ -354,6 +360,13 @@ body::after {
     0% { box-shadow: 0 0 30px rgba(146, 62, 191, 0.2); }
     50% { box-shadow: 0 0 100px rgba(146, 62, 191, 0.6); }
     100% { box-shadow: 0 0 30px rgba(146, 62, 191, 0.2); }
+}
+
+/* Add these new styles for the animated border effect */
+@keyframes borderAnimation {
+    0% { border-color: var(--text-purple); }
+    50% { border-color: var(--primary); }
+    100% { border-color: var(--text-purple); }
 }
 
 /* ==========================================================================
@@ -492,6 +505,14 @@ body::after {
 .tech-icon-wrapper {
     position: relative;
     cursor: pointer;
+    padding: 4px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.tech-icon-wrapper:hover {
+    border: 2px solid var(--text-purple);
+    animation: borderAnimation 2s infinite;
 }
 
 .tech-icon {

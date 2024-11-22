@@ -108,6 +108,13 @@ body::after {
     object-fit: cover;
     position: relative;
     width: 200px;
+    transition: var(--transition);
+}
+
+/* Add hover effects */
+.circular-image:hover {
+    transform: scale(1.05);  /* Slightly increase size */
+    box-shadow: 0 0 100px rgba(146, 62, 191, 0.8);  /* Brighter glow */
 }
 
 /* Demo Reel */

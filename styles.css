@@ -502,13 +502,6 @@ body::after {
     padding: 4px;
 }
 
-.tech-icon-wrapper:hover {
-    /* Remove:
-    border: 2px solid var(--text-purple);
-    animation: borderAnimation 2s infinite;
-    */
-}
-
 .tech-icon {
     width: 30px;
     height: 30px;

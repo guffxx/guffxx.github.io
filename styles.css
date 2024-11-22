@@ -499,7 +499,7 @@ body::after {
     height: 15px;
     opacity: 0.8;
     transition: var(--transition);
-    animation: smoothPulseGlow 4s ease-in-out infinite;
+    box-shadow: 0 0 15px rgba(146, 62, 191, 0.3);
 }
 
 .tech-icon-wrapper:hover .tech-icon {

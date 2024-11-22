@@ -495,8 +495,8 @@ body::after {
 }
 
 .tech-icon {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     opacity: 0.8;
     transition: var(--transition);
     box-shadow: 0 0 15px rgba(146, 62, 191, 0.3);

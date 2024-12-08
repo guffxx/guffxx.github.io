@@ -368,8 +368,28 @@ body.voice-acting::after {
     color: var(--primary);
     font-size: 3rem;
     letter-spacing: 2px;
-    margin-bottom: calc(var(--space) * 1.5);
+    margin-bottom: calc(var(--space));
     text-shadow: 0 0 25px var(--primary-glow);
+    position: relative;
+}
+
+.welcome-section h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--primary) 20%,
+        var(--text-purple) 50%,
+        var(--primary) 80%,
+        transparent
+    );
+    box-shadow: 0 0 15px var(--purple-glow);
 }
 
 .welcome-text {

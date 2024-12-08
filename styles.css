@@ -439,30 +439,30 @@ body::after {
         width: 100%;
     }
 
-    .welcome-section {
-        order: 1;
-        width: 100%;
-        margin-bottom: calc(var(--space) * 2);
-    }
-
     .top-section {
-        order: 2;
+        order: 1;
         display: flex;
         flex-direction: column;
         gap: calc(var(--space) * 0.75);
         width: 100%;
     }
 
-    .top-section .top-buttons-container:first-child {
+    .welcome-section {
         order: 2;
+        width: 100%;
+        margin: calc(var(--space) * 2) 0;
     }
 
     .top-section .profile-container {
         order: 1;
     }
 
-    .top-section .top-buttons-container:last-child {
+    .top-section .top-buttons-container:first-child {
         order: 3;
+    }
+
+    .top-section .top-buttons-container:last-child {
+        order: 4;
     }
 
     .circular-image {

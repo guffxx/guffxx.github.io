@@ -463,21 +463,22 @@ body::after {
 
     .top-buttons {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: calc(var(--space) * 0.5);
         width: 100%;
-        padding: 0 calc(var(--space) * 0.5);
+        padding: 0 var(--space);
     }
 
     .social-item {
         min-width: unset;
         width: 100%;
         margin: 0;
+        font-size: 0.9rem;
     }
 
     .top-buttons-container {
         width: 100%;
-        padding: 0 var(--space);
+        padding: 0;
         margin: calc(var(--space) * 0.5) 0;
     }
 
@@ -487,7 +488,8 @@ body::after {
     .demo-reel,
     .about-section,
     .video-samples {
-        max-width: 100%;
+        max-width: none;
+        width: 100%;
         margin: calc(var(--space) * 0.5) 0;
     }
 

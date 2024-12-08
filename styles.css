@@ -373,18 +373,6 @@ body.voice-acting::after {
     position: relative;
 }
 
-.welcome-section h1::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 2px;
-    background: var(--primary);
-    box-shadow: 0 0 15px var(--purple-glow);
-}
-
 .welcome-text {
     color: var(--text);
     font-size: 1.1rem;

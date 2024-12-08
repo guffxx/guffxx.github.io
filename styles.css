@@ -57,18 +57,18 @@ body::after {
 
 /* Add these styles for the voice acting page */
 body.voice-acting {
-    background: var(--bg) url('https://www.yellowbrick.co/wp-content/uploads/2022/03/Copy-of-YB-Blog-Featured-Image-81-1024x683.gif') center/cover no-repeat fixed;
+    background: var(--bg) url('https://www.spotlight.com/wp-content/uploads/2023/10/jonathan-velasquez-160775-scaled.jpg') center/cover no-repeat fixed;
     min-height: 100vh;
     min-width: 100vw;
 }
 
-/* Adjust the overlay for better readability */
+/* Adjust the overlay for better readability with the new image */
 body.voice-acting::after {
     background: radial-gradient(
         circle at center,
-        rgba(27, 31, 35, 0.7) 0%,
-        rgba(27, 31, 35, 0.8) 50%,
-        rgba(27, 31, 35, 0.9) 100%
+        rgba(27, 31, 35, 0.6) 0%,
+        rgba(27, 31, 35, 0.7) 50%,
+        rgba(27, 31, 35, 0.8) 100%
     );
     content: '';
     position: fixed;
@@ -506,7 +506,7 @@ body.voice-acting::after {
 
     /* Voice Acting Page */
     body.voice-acting {
-        background: var(--bg) url('https://www.yellowbrick.co/wp-content/uploads/2022/03/Copy-of-YB-Blog-Featured-Image-81-1024x683.gif') center/120% no-repeat fixed;
+        background: var(--bg) url('https://www.spotlight.com/wp-content/uploads/2023/10/jonathan-velasquez-160775-scaled.jpg') center/120% no-repeat fixed;
     }
 
     .flex-container {
@@ -604,7 +604,7 @@ body.voice-acting::after {
 
     /* Voice Acting Page */
     body.voice-acting {
-        background: var(--bg) url('https://www.yellowbrick.co/wp-content/uploads/2022/03/Copy-of-YB-Blog-Featured-Image-81-1024x683.gif') center/150% no-repeat fixed;
+        background: var(--bg) url('https://www.spotlight.com/wp-content/uploads/2023/10/jonathan-velasquez-160775-scaled.jpg') center/150% no-repeat fixed;
     }
 
     .video-container {
@@ -715,18 +715,18 @@ body.voice-acting::after {
 
 /* Update the voice acting background styles */
 body.voice-acting {
-    background: var(--bg) url('https://www.yellowbrick.co/wp-content/uploads/2022/03/Copy-of-YB-Blog-Featured-Image-81-1024x683.gif') center/cover no-repeat fixed;
+    background: var(--bg) url('https://www.spotlight.com/wp-content/uploads/2023/10/jonathan-velasquez-160775-scaled.jpg') center/cover no-repeat fixed;
     min-height: 100vh;
     min-width: 100vw;
 }
 
-/* Adjust the overlay for better readability */
+/* Adjust the overlay for better readability with the new image */
 body.voice-acting::after {
     background: radial-gradient(
         circle at center,
-        rgba(27, 31, 35, 0.7) 0%,
-        rgba(27, 31, 35, 0.8) 50%,
-        rgba(27, 31, 35, 0.9) 100%
+        rgba(27, 31, 35, 0.6) 0%,
+        rgba(27, 31, 35, 0.7) 50%,
+        rgba(27, 31, 35, 0.8) 100%
     );
     content: '';
     position: fixed;
@@ -742,7 +742,7 @@ body.voice-acting::after {
 
 @media (max-width: 768px) {
     body.voice-acting {
-        background-size: auto 100vh; /* This will ensure full height coverage */
+        background-size: auto 100vh;
     }
 }
 

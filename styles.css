@@ -447,53 +447,6 @@ body.voice-acting::after {
     }
 }
 
-@media (max-width: 768px) {
-    .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    /* Move top-section and welcome-section out of normal flow */
-    .top-section {
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        gap: calc(var(--space) * 0.75);
-        width: 100%;
-    }
-
-    /* Keep only profile container in top-section */
-    .profile-container {
-        width: 100%;
-    }
-
-    /* Move links sections outside of top-section */
-    .links-section {
-        position: relative;
-        width: 100%;
-        max-width: none;
-        padding: 0 calc(var(--space) * 0.5);
-    }
-
-    /* Reorder elements using flexbox order */
-    .profile-container {
-        order: 1; /* Profile first */
-    }
-
-    .welcome-section {
-        order: 2; /* Welcome section second */
-        width: 100%;
-        margin: calc(var(--space) * 2) 0;
-    }
-
-    .links-section {
-        order: 3; /* Links last */
-    }
-
-    /* Rest of your mobile styles... */
-}
-
 @media (max-width: 480px) {
     .container {
         padding: calc(var(--space) * 0.5);
@@ -537,20 +490,6 @@ body.voice-acting::after {
     .social-item p {
         font-size: 0.8rem;
     }
-     /* Reorder elements using flexbox order */
-     .profile-container {
-        order: 1; /* Profile first */
-    }
-    
-    .welcome-section {
-        order: 2; /* Welcome section second */
-        width: 100%;
-        margin: calc(var(--space) * 2) 0;
-    }
-    
-        .links-section {
-            order: 3; /* Links last */
-        }
 }
 
 /* Add these new styles */
@@ -582,40 +521,6 @@ body.voice-acting::after {
     margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
-    .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .top-section {
-        order: 1;
-    }
-
-    .welcome-section {
-        order: 2;
-        margin: calc(var(--space) * 2) 0;
-    }
-
-    .links-section {
-        order: 3;
-        padding: 0 calc(var(--space) * 0.5);
-    }
-
-    .links-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: calc(var(--space) * 0.5);
-    }
-
-    .social-item {
-        min-width: unset;
-        width: 100%;
-        margin: 0;
-        font-size: 0.9rem;
-    }
-}
-
 @media (max-width: 480px) {
     .links-grid {
         gap: calc(var(--space) * 0.25);
@@ -633,6 +538,23 @@ body.voice-acting::after {
     .social-item p {
         font-size: 0.75rem;
         margin: 0;
+    }
+}
+
+/* Update the voice acting background styles */
+body.voice-acting {
+    background: var(--bg) url('https://www.yellowbrick.co/wp-content/uploads/2022/03/Copy-of-YB-Blog-Featured-Image-81-1024x683.gif') center/cover no-repeat fixed;
+}
+
+@media (max-width: 768px) {
+    body.voice-acting {
+        background: var(--bg) url('https://www.yellowbrick.co/wp-content/uploads/2022/03/Copy-of-YB-Blog-Featured-Image-81-1024x683.gif') center/120% no-repeat fixed;
+    }
+}
+
+@media (max-width: 480px) {
+    body.voice-acting {
+        background: var(--bg) url('https://www.yellowbrick.co/wp-content/uploads/2022/03/Copy-of-YB-Blog-Featured-Image-81-1024x683.gif') center/150% no-repeat fixed;
     }
 }
 

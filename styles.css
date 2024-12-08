@@ -135,13 +135,12 @@ body.voice-acting::after {
     object-fit: cover;
     position: relative;
     width: 200px;
-    transition: var(--transition);
+    transition: box-shadow 0.3s ease;
 }
 
-/* Add hover effects */
+/* Update hover effects to only affect glow */
 .circular-image:hover {
-    transform: scale(1.05);  /* Slightly increase size */
-    box-shadow: 0 0 100px rgba(146, 62, 191, 0.8);  /* Brighter glow */
+    box-shadow: 0 0 100px rgba(146, 62, 191, 0.8);
 }
 
 /* Demo Reel */

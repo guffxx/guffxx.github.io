@@ -461,28 +461,19 @@ body::after {
         text-align: center;
     }
 
-    .social-links-top,
-    .social-links-bottom {
-        align-items: center;
-        flex-direction: column;
-        gap: calc(var(--space) * 0.1875);
-        margin: 0 auto;
-        max-width: 400px;
-        padding: calc(var(--space) * 0.125);
-        width: 100%;
-    }
-
     .top-buttons {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: calc(var(--space) * 0.5);
         width: 100%;
     }
 
     .top-buttons .social-item {
-        min-width: unset;
-        width: 100%;
-        font-size: 0.9rem;
+        flex: 1 1 calc(50% - var(--space));
+        min-width: 150px;
+        max-width: 200px;
     }
 
     .top-buttons .social-item:hover {
@@ -490,8 +481,10 @@ body::after {
     }
 
     .top-section {
+        display: flex;
         flex-direction: column;
         gap: calc(var(--space) * 0.75);
+        width: 100%;
     }
 
     .top-section .top-buttons-container:first-child {
@@ -508,8 +501,11 @@ body::after {
 
     .top-buttons-container {
         width: 100%;
-        max-width: 400px;
+        max-width: none;
         margin: calc(var(--space) * 0.5) auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .video-container {

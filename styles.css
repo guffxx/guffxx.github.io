@@ -488,7 +488,6 @@ body.voice-acting::after {
         max-width: none;
         padding: 0 calc(var(--space) * 0.5);
         order: 3;
-        margin-top: calc(var(--space) * 1.5);
     }
 
     /* Links Grid */

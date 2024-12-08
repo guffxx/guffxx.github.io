@@ -428,36 +428,42 @@ body::after {
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: var(--space);
-    }
-
     .content-wrapper {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
+    /* Profile section */
     .top-section {
         flex-direction: column;
         align-items: center;
         gap: calc(var(--space) * 0.75);
+        width: 100%;
         order: 1;
     }
 
+    /* Remove any nested order styles that might conflict */
+    .profile-container {
+        width: 100%;
+    }
+
+    /* Welcome section */
     .welcome-section {
-        order: 2;
         width: 100%;
         margin: calc(var(--space) * 2) 0;
+        order: 2;
     }
 
+    /* Move links section outside of top-section in mobile view */
     .links-section {
-        order: 3;
-        max-width: none;
         width: 100%;
+        max-width: none;
         padding: 0 calc(var(--space) * 0.5);
+        order: 3; /* This ensures it comes after welcome section */
     }
 
+    /* Keep consistent button styling */
     .links-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: calc(var(--space) * 0.5);
@@ -475,16 +481,6 @@ body::after {
         align-items: center;
         padding: calc(var(--space) * 0.5);
         margin: 0;
-    }
-
-    .social-item h3 {
-        margin: 0 0 4px 0;
-        font-size: 0.9rem;
-    }
-
-    .social-item p {
-        margin: 0;
-        font-size: 0.8rem;
     }
 
     .circular-image {

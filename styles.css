@@ -182,7 +182,7 @@ body.voice-acting::after {
 
 /* Icon Container */
 .icon-container {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
     gap: calc(var(--space) * 0.75);
     justify-content: center;

@@ -385,7 +385,7 @@ body.voice-acting::after {
         90deg,
         transparent,
         var(--primary) 20%,
-        var(--text-purple) 50%,
+        var(--text-purple) 10%,
         var(--primary) 80%,
         transparent
     );

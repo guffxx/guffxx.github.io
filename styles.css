@@ -183,8 +183,8 @@ body.voice-acting::after {
 /* Icon Container */
 .icon-container {
     display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    gap: calc(var(--space) * 0.75);
+    flex-wrap: wrap;
+    gap: calc(var(--space) * 0.25);
     justify-content: center;
     margin: calc(var(--space) * 0.5) 0;
     max-width: 200px;
@@ -194,7 +194,7 @@ body.voice-acting::after {
 .tech-icon-wrapper {
     position: relative;
     cursor: pointer;
-    padding: 2px 4px;
+    padding: 2px;
 }
 
 .tech-icon {
@@ -560,7 +560,7 @@ body.voice-acting::after {
 
     /* Icons */
     .icon-container {
-        gap: calc(var(--space) * 0.5);
+        gap: calc(var(--space) * 0.15);
         max-width: 180px;
     }
     

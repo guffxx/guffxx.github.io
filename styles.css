@@ -227,6 +227,7 @@ body::after {
     font-size: 1.1rem;
     margin-bottom: calc(var(--space) * 0.5);
     text-shadow: var(--text-shadow);
+    text-align: center;
 }
 
 /* Social Items */
@@ -484,6 +485,24 @@ body::after {
     .top-section {
         flex-direction: column;
         gap: var(--space);
+    }
+
+    .top-section .top-buttons-container:first-child {
+        order: 2;
+    }
+
+    .top-section .profile-container {
+        order: 1;
+    }
+
+    .top-section .top-buttons-container:last-child {
+        order: 3;
+    }
+
+    .top-buttons-container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .video-container {

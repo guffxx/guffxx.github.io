@@ -475,6 +475,9 @@ body::after {
     .top-buttons {
         align-items: center;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--space) * 0.5);
     }
 
     .top-buttons .social-item {
@@ -484,7 +487,7 @@ body::after {
 
     .top-section {
         flex-direction: column;
-        gap: var(--space);
+        gap: calc(var(--space) * 0.75);
     }
 
     .top-section .top-buttons-container:first-child {
@@ -502,7 +505,7 @@ body::after {
     .top-buttons-container {
         width: 100%;
         max-width: 400px;
-        margin: 0 auto;
+        margin: calc(var(--space) * 0.5) auto;
     }
 
     .video-container {
@@ -548,6 +551,14 @@ body::after {
     .tech-icon {
         width: 25px;
         height: 25px;
+    }
+
+    .top-buttons {
+        gap: calc(var(--space) * 0.25);
+    }
+
+    .top-section {
+        gap: calc(var(--space) * 0.5);
     }
 }
 

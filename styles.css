@@ -381,12 +381,7 @@ body.voice-acting::after {
     transform: translateX(-50%);
     width: 100px;
     height: 2px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        var(--primary) 100%,
-        transparent
-    );
+    background: var(--primary);
     box-shadow: 0 0 15px var(--purple-glow);
 }
 

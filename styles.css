@@ -434,12 +434,35 @@ body::after {
     }
 
     .content-wrapper {
-        align-items: center;
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
-        padding: var(--space);
         width: 100%;
+    }
+
+    .welcome-section {
+        order: 1;
+        width: 100%;
+        margin-bottom: calc(var(--space) * 2);
+    }
+
+    .top-section {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--space) * 0.75);
+        width: 100%;
+    }
+
+    .top-section .top-buttons-container:first-child {
+        order: 2;
+    }
+
+    .top-section .profile-container {
+        order: 1;
+    }
+
+    .top-section .top-buttons-container:last-child {
+        order: 3;
     }
 
     .circular-image {

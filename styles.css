@@ -384,9 +384,7 @@ body.voice-acting::after {
     background: linear-gradient(
         90deg,
         transparent,
-        var(--primary) 20%,
-        var(--text-purple) 100%,
-        var(--primary) 80%,
+        var(--primary) 100%,
         transparent
     );
     box-shadow: 0 0 15px var(--purple-glow);

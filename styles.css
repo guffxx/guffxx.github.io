@@ -232,7 +232,7 @@ body.voice-acting::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: calc(var(--space) * 0.5);
+    gap: calc(var(--space) * 0.25);
 }
 
 /* Profile Image */
@@ -300,9 +300,9 @@ body.voice-acting::after {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: calc(var(--space) * 2);
+    gap: calc(var(--space));
     width: 100%;
-    margin: calc(var(--space) * 4) 0;
+    margin: calc(var(--space) * 2) 0;
 }
 
 /* Video Container */
@@ -360,7 +360,7 @@ body.voice-acting::after {
 .welcome-section {
     margin: 0 auto;
     max-width: 800px;
-    padding: calc(var(--space) * 1.5) 0;
+    padding: calc(var(--space)) 0;
     text-align: center;
 }
 
@@ -456,10 +456,10 @@ body.voice-acting::after {
         position: relative;
         flex-direction: column;
         align-items: center;
-        gap: calc(var(--space) * 0.75);
+        gap: calc(var(--space) * 0.5);
         width: 100%;
         order: 1;
-        margin: calc(var(--space) * 2) 0;
+        margin: calc(var(--space)) 0;
     }
 
     .profile-container {
@@ -470,7 +470,7 @@ body.voice-acting::after {
     .welcome-section {
         order: 2;
         width: 100%;
-        margin: calc(var(--space) * 2) 0;
+        margin: calc(var(--space)) 0;
     }
 
     .links-section {
@@ -626,7 +626,7 @@ body.voice-acting::after {
 .links-section {
     flex: 1;
     max-width: 300px;
-    margin: calc(var(--space) * 2) auto 0;
+    margin: calc(var(--space)) auto 0;
     padding: 0 var(--space);
 }
 
@@ -664,7 +664,7 @@ body.voice-acting::after {
 
     .welcome-section {
         order: 2;
-        margin: calc(var(--space) * 2) 0;
+        margin: calc(var(--space)) 0;
     }
 
     .links-section {

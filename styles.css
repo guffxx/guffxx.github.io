@@ -182,9 +182,9 @@ body.voice-acting::after {
 
 /* Icon Container */
 .icon-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: calc(var(--space) * 0.25);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--space) * 0.75);
     justify-content: center;
     margin: calc(var(--space) * 0.5) 0;
     max-width: 200px;

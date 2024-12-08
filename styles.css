@@ -517,6 +517,20 @@ body::after {
     .social-item p {
         font-size: 0.8rem;
     }
+        /* Reorder elements using flexbox order */
+        .profile-container {
+            order: 1; /* Profile first */
+        }
+    
+        .welcome-section {
+            order: 2; /* Welcome section second */
+            width: 100%;
+            margin: calc(var(--space) * 2) 0;
+        }
+    
+        .links-section {
+            order: 3; /* Links last */
+        }
 }
 
 /* Add these new styles */

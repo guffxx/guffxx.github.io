@@ -280,13 +280,12 @@ body::after {
 
 /* Top Section */
 .top-section {
-    align-items: center;
     display: flex;
-    gap: calc(var(--space) * 2);
     justify-content: center;
-    margin-bottom: calc(var(--space) * 2);
-    max-width: 800px;
+    align-items: flex-start;
+    gap: calc(var(--space) * 2);
     width: 100%;
+    margin-bottom: calc(var(--space) * 2);
 }
 
 /* Video Container */
@@ -440,11 +439,9 @@ body::after {
     }
 
     .top-section {
-        order: 1;
-        display: flex;
         flex-direction: column;
+        align-items: center;
         gap: calc(var(--space) * 0.75);
-        width: 100%;
     }
 
     .welcome-section {
@@ -612,8 +609,8 @@ body::after {
 
 /* Add these new styles */
 .links-section {
-    width: 100%;
-    max-width: 800px;
+    flex: 1;
+    max-width: 300px;
     margin: 0 auto;
     padding: 0 var(--space);
 }

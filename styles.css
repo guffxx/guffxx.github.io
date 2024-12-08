@@ -462,22 +462,33 @@ body::after {
     }
 
     .top-buttons {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: calc(var(--space) * 0.5);
         width: 100%;
+        padding: 0 calc(var(--space) * 0.5);
     }
 
-    .top-buttons .social-item {
-        flex: 1 1 calc(50% - var(--space));
-        min-width: 150px;
-        max-width: 200px;
+    .social-item {
+        min-width: unset;
+        width: 100%;
+        margin: 0;
     }
 
-    .top-buttons .social-item:hover {
-        transform: scale(1.05) translateX(2px);
+    .top-buttons-container {
+        width: 100%;
+        padding: 0 var(--space);
+        margin: calc(var(--space) * 0.5) 0;
+    }
+
+    .welcome-card,
+    .social-item,
+    .menu-item,
+    .demo-reel,
+    .about-section,
+    .video-samples {
+        max-width: 100%;
+        margin: calc(var(--space) * 0.5) 0;
     }
 
     .top-section {

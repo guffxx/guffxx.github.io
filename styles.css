@@ -311,7 +311,7 @@ body.voice-acting::after {
     align-items: flex-start;
     gap: calc(var(--space) * 2);
     width: 100%;
-    margin-bottom: calc(var(--space) * 2);
+    margin: calc(var(--space) * 4) 0;
 }
 
 /* Video Container */
@@ -468,6 +468,7 @@ body.voice-acting::after {
         gap: calc(var(--space) * 0.75);
         width: 100%;
         order: 1;
+        margin: calc(var(--space) * 2) 0;
     }
 
     .profile-container {
@@ -487,6 +488,7 @@ body.voice-acting::after {
         max-width: none;
         padding: 0 calc(var(--space) * 0.5);
         order: 3;
+        margin-top: calc(var(--space) * 1.5);
     }
 
     /* Links Grid */
@@ -634,7 +636,7 @@ body.voice-acting::after {
 .links-section {
     flex: 1;
     max-width: 300px;
-    margin: 0 auto;
+    margin: calc(var(--space) * 2) auto 0;
     padding: 0 var(--space);
 }
 

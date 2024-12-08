@@ -560,6 +560,11 @@ body::after {
         max-width: 400px;
         width: 100%;
     }
+
+    .links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: calc(var(--space) * 0.5);
+    }
 }
 
 @media (max-width: 480px) {
@@ -626,7 +631,7 @@ body::after {
 
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: calc(var(--space) * 0.75);
     width: 100%;
     margin-bottom: calc(var(--space) * 2);
@@ -658,6 +663,7 @@ body::after {
     }
 
     .links-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: calc(var(--space) * 0.5);
     }
 

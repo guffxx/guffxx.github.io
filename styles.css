@@ -280,7 +280,16 @@ body.voice-acting::after {
     z-index: 1001;
 }
 
+/* Add styles to handle nested links in social items */
+.social-item p a {
+    color: inherit;
+    text-decoration: underline;
+    pointer-events: none; /* Prevents the nested link from capturing clicks */
+}
 
+.social-item:hover p a {
+    color: var(--bg-dark);
+}
 
 /* Top Buttons */
 .top-buttons {
@@ -484,8 +493,8 @@ body.voice-acting::after {
 
     /* Links Grid */
     .links-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: calc(var(--space) * 0.5);
+        grid-template-columns: 1fr;
+        gap: calc(var(--space));
         max-width: 600px;
         margin: 0 auto calc(var(--space) * 2);
     }
@@ -629,6 +638,7 @@ body.voice-acting::after {
     max-width: 300px;
     margin: calc(var(--space)) auto 0;
     padding: 0 var(--space);
+    width: 100%;
 }
 
 .links-section .section-label {
@@ -642,7 +652,6 @@ body.voice-acting::after {
 
 .links-grid {
     display: grid;
-    grid-template-columns: 1fr;
     gap: calc(var(--space) * 0.75);
     width: 100%;
     margin-bottom: calc(var(--space) * 2);
@@ -674,8 +683,10 @@ body.voice-acting::after {
     }
 
     .links-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: calc(var(--space) * 0.5);
+        grid-template-columns: 1fr;
+        gap: calc(var(--space));
+        max-width: 600px;
+        margin: 0 auto calc(var(--space) * 2);
     }
 
     .social-item {
@@ -688,7 +699,7 @@ body.voice-acting::after {
 
 @media (max-width: 480px) {
     .links-grid {
-        gap: calc(var(--space) * 0.25);
+        gap: calc(var(--space) * 0.75);
     }
 
     .social-item {
@@ -742,5 +753,33 @@ body.voice-acting::after {
 @media (max-width: 480px) {
     body.voice-acting {
         background-size: auto 100vh;
+    }
+}
+
+/* Fix bottom section styling */
+.bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: calc(var(--space) * 2);
+}
+
+.bottom-section .links-section {
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+}
+
+/* Ensure consistent social-item styling */
+.social-item {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .bottom-section .links-section {
+        max-width: 600px;
+        width: 100%;
     }
 }

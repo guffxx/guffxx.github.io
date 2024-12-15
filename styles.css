@@ -333,14 +333,6 @@ body.voice-acting::after {
     z-index: 1001;
 }
 
-.social-links-top {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    order: 3;
-}
-
-
 /* Top Section */
 .top-section {
     position: relative;
@@ -747,94 +739,6 @@ body.voice-acting::after {
     }
 }
 
-/* Links section styling
-   Controls the layout and appearance of link containers */
-.links-section {
-    flex: initial;
-    max-width: 1200px;
-    margin: calc(var(--space) * 2) auto;
-    padding: 0 var(--space);
-    width: 100%;
-    order: 1;
-}
-
-/* Section label styling within links section */
-.links-section .section-label {
-    margin-top: calc(var(--space) * 2);
-    margin-bottom: calc(var(--space));
-}
-
-/* First section label specific styling */
-.links-section .section-label:first-child {
-    margin-top: 0;
-}
-
-.links-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: calc(var(--space) * 1.5);
-    width: 100%;
-    margin: 0 auto;
-}
-
-.links-grid:last-child {
-    margin-bottom: 0;
-}
-
-
-/* Update the voice acting background styles */
-body.voice-acting {
-    background: var(--bg) url('https://www.spotlight.com/wp-content/uploads/2023/10/jonathan-velasquez-160775-scaled.jpg') center/cover no-repeat fixed;
-    min-height: 100vh;
-    min-width: 100vw;
-}
-
-/* Adjust the overlay for better readability with the new image */
-body.voice-acting::after {
-    background: radial-gradient(
-        circle at center,
-        rgba(27, 31, 35, 0.6) 0%,
-        rgba(27, 31, 35, 0.7) 50%,
-        rgba(27, 31, 35, 0.8) 100%
-    );
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 1;
-}
-
-/* Fix bottom section styling */
-.bottom-section {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    margin-bottom: calc(var(--space) * 2);
-}
-
-.bottom-section .links-section {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-}
-
-/* Ensure consistent social-item styling */
-.social-item {
-    width: auto;
-    min-width: 200px;
-    max-width: 250px;
-    flex: 0 1 auto;
-    margin: 0;
-}
-
 /* Navigation specific styles */
 .navbar {
     position: relative;
@@ -911,16 +815,6 @@ body.voice-acting::after {
 
 .footer a:hover {
     color: var(--primary-glow);
-}
-
-/* Remove translateX from hover effect */
-.top-section .social-item:hover {
-    transform: scale(1.05);
-}
-
-/* Update bottom section social item hover */
-.bottom-section .social-item:hover {
-    transform: scale(1.05);
 }
 
 

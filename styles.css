@@ -910,33 +910,6 @@ body.voice-acting::after {
     color: var(--primary-glow);
 }
 
-/* Update social item hover effects */
-.social-item {
-    backdrop-filter: blur(5px);
-    background: var(--glass-bg);
-    border-radius: var(--radius);
-    box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
-    color: var(--primary);
-    display: block;
-    min-width: 200px;
-    max-width: 300px;
-    padding: calc(var(--space) * 0.75) calc(var(--space));
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: var(--transition);
-    width: 100%;
-    z-index: 1;
-}
-
-.social-item:hover {
-    background: var(--text);
-    box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
-    color: var(--bg-dark);
-    transform: scale(1.05);
-    z-index: 1001;
-}
-
 /* Remove translateX from hover effect */
 .top-section .social-item:hover {
     transform: scale(1.05);
@@ -947,12 +920,4 @@ body.voice-acting::after {
     transform: scale(1.05);
 }
 
-/* Update social-item-vo hover */
-.social-item-vo:hover {
-    background: var(--text);
-    box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
-    color: var(--bg-dark);
-    transform: scale(1.05);
-    z-index: 1001;
-}
 

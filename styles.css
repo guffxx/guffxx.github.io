@@ -106,9 +106,10 @@ body.voice-acting::after {
 }
 
 .content-wrapper {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: var(--space);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: calc(var(--space) * 2);
 }
 
 /* ==========================================================================
@@ -263,25 +264,38 @@ body.voice-acting::after {
     border-radius: var(--radius);
     box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
     color: var(--primary);
+    display: block;
     min-width: 200px;
-    padding: calc(var(--space) * 0.5) calc(var(--space) * 0.75);
+    max-width: 300px;
+    padding: calc(var(--space) * 0.75) calc(var(--space));
     position: relative;
     text-align: center;
     text-decoration: none;
     transition: var(--transition);
+    width: 100%;
     z-index: 1;
+}
+
+.social-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: calc(var(--space) * 0.25);
+}
+
+.social-item p {
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .social-item:hover {
     background: var(--text);
     box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
     color: var(--bg-dark);
-    transform: scale(1.1) translateX(5px);
+    transform: scale(1.05);
     z-index: 1001;
 }
 
 /* Add styles to handle nested links in social items */
-.social-item p a {
+.social-item p a{
     color: inherit;
     text-decoration: underline;
     pointer-events: none; /* Prevents the nested link from capturing clicks */
@@ -291,27 +305,76 @@ body.voice-acting::after {
     color: var(--bg-dark);
 }
 
-/* Top Buttons */
-.top-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--space) * 0.5);
+.social-item-vo {
+    backdrop-filter: blur(5px);
+    background: var(--glass-bg);
+    border-radius: var(--radius);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    color: var(--primary);
+    display: block;
+    margin: calc(var(--space) * 2) auto;
+    max-width: 300px;
+    padding: calc(var(--space) * 0.5) calc(var(--space) * 0.75);
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: var(--transition);
+    width: 100%;
+    z-index: 1;
 }
 
-.top-buttons-container {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--space) * 0.75);
+.social-item-vo:hover {
+    background: var(--text);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
+    color: var(--bg-dark);
+    transform: scale(1.05);
+    z-index: 1001;
 }
+
+.social-links-top {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    order: 3;
+}
+
 
 /* Top Section */
 .top-section {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: calc(var(--space));
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}
+
+.top-section .section-label {
+    margin: 0 0 calc(var(--space) * 0.5);
+}
+
+.top-section .links-grid {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
     gap: calc(var(--space));
     width: 100%;
-    margin: calc(var(--space) * 2) 0;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+.top-section .social-item {
+    flex: 0 1 auto;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 0;
+    background: var(--bg-dark);
 }
 
 /* Video Container */
@@ -452,14 +515,22 @@ body.voice-acting::after {
     .profile-image {
         width: min(85vw, 600px);
     }
+    
 }
 
+/* Media query for tablet and smaller screens
+   Adjusts layout and sizing for better mobile viewing */
 @media (max-width: 768px) {
+    body.voice-acting {
+        background-size: auto 100vh;
+    }
     .content-wrapper {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
+    
 
     /* Layout */
     .top-section {
@@ -470,6 +541,11 @@ body.voice-acting::after {
         width: 100%;
         order: 1;
         margin: calc(var(--space)) 0;
+    }
+
+    .bottom-section .links-section {
+        max-width: 600px;
+        width: 100%;
     }
 
     .profile-container {
@@ -499,24 +575,33 @@ body.voice-acting::after {
         margin: 0 auto calc(var(--space) * 2);
     }
 
+    /* Social item mobile styling
+       Makes items full width and adjusts text size */
     .social-item {
         min-width: unset;
         width: 100%;
         margin: 0;
         font-size: 0.9rem;
     }
+    .social-item-vo {
+        max-width: 600px;
+        font-size: 0.9rem;
+    }
 
-    /* Voice Acting Page */
+    /* Voice acting page background adjustment for mobile */
     body.voice-acting {
         background: var(--bg) url('https://www.spotlight.com/wp-content/uploads/2023/10/jonathan-velasquez-160775-scaled.jpg') center/120% no-repeat fixed;
     }
 
+    /* Flex container mobile layout
+       Switches to vertical stacking */
     .flex-container {
         flex-direction: column;
         gap: calc(var(--space));
         padding: 0;
     }
 
+    /* Demo reel and about section mobile width adjustments */
     .demo-reel,
     .about-section {
         width: 100%;
@@ -524,20 +609,24 @@ body.voice-acting::after {
         margin: 0 auto;
     }
 
+    /* Video samples container mobile adjustments */
     .video-samples {
         width: 100%;
         padding: calc(var(--space) * 0.5);
     }
 
+    /* Video container padding adjustment for mobile */
     .video-container {
         padding: calc(var(--space));
     }
 
+    /* Video iframe size adjustments for mobile viewing */
     .video-container iframe {
         flex: 0 0 300px;
         height: 169px;
     }
 
+    /* Demo item spacing and margins for mobile */
     .demo-item {
         margin-bottom: calc(var(--space));
     }
@@ -552,7 +641,13 @@ body.voice-acting::after {
     }
 }
 
+/* Small mobile device adjustments
+   Further refinements for very small screens */
 @media (max-width: 480px) {
+    body.voice-acting {
+        background-size: auto 100vh;
+    }
+
     .container {
         padding: calc(var(--space) * 0.5);
     }
@@ -561,25 +656,26 @@ body.voice-acting::after {
         width: 75vw;
     }
 
-    /* Text Styles */
+    /* Text size adjustments for better readability on small screens */
     .welcome-text,
     .social-item p {
         font-size: 0.95rem;
         line-height: 1.4;
     }
 
-    /* Icons */
+    /* Icon container adjustments for small screens */
     .icon-container {
         gap: calc(var(--space) * 0.15);
         max-width: 180px;
     }
     
+    /* Tech icon size adjustments */
     .tech-icon {
         width: 35px;
         height: 35px;
     }
 
-    /* Layout & Spacing */
+    /* Layout spacing adjustments for small screens */
     .top-buttons,
     .links-grid {
         gap: calc(var(--space) * 0.25);
@@ -589,7 +685,7 @@ body.voice-acting::after {
         gap: calc(var(--space) * 0.5);
     }
 
-    /* Social Items */
+    /* Social item adjustments for small screens */
     .social-item {
         padding: calc(var(--space) * 0.4);
     }
@@ -604,11 +700,12 @@ body.voice-acting::after {
         margin: 0;
     }
 
-    /* Voice Acting Page */
+    /* Voice acting page background adjustment for small screens */
     body.voice-acting {
         background: var(--bg) url('https://www.spotlight.com/wp-content/uploads/2023/10/jonathan-velasquez-160775-scaled.jpg') center/150% no-repeat fixed;
     }
 
+    /* Video container adjustments for small screens */
     .video-container {
         padding: calc(var(--space) * 0.5);
     }
@@ -618,11 +715,13 @@ body.voice-acting::after {
         height: 141px;
     }
 
+    /* Demo reel and about section padding for small screens */
     .demo-reel,
     .about-section {
         padding: calc(var(--space));
     }
 
+    /* Demo item adjustments for small screens */
     .demo-item {
         margin-bottom: calc(var(--space) * 0.75);
     }
@@ -630,92 +729,59 @@ body.voice-acting::after {
     .demo-item h3 {
         font-size: 0.9rem;
     }
+
+    .social-item-vo {
+        padding: calc(var(--space) * 0.4);
+    }
+
+    .social-item-vo h3 {
+        font-size: 0.85rem;
+        margin-bottom: 2px;
+    }
+
+    .social-item-vo p {
+        font-size: 0.75rem;
+        margin: 0;
+    }
 }
 
-/* Add these new styles */
+/* Links section styling
+   Controls the layout and appearance of link containers */
 .links-section {
-    flex: 1;
-    max-width: 300px;
-    margin: calc(var(--space)) auto 0;
+    flex: initial;
+    max-width: 1200px;
+    margin: calc(var(--space) * 2) auto;
     padding: 0 var(--space);
     width: 100%;
+    order: 1;
 }
 
+/* Section label styling within links section */
 .links-section .section-label {
     margin-top: calc(var(--space) * 2);
     margin-bottom: calc(var(--space));
 }
 
+/* First section label specific styling */
 .links-section .section-label:first-child {
     margin-top: 0;
 }
 
 .links-grid {
-    display: grid;
-    gap: calc(var(--space) * 0.75);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--space) * 1.5);
     width: 100%;
-    margin-bottom: calc(var(--space) * 2);
+    margin: 0 auto;
 }
 
 .links-grid:last-child {
     margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
-    .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .top-section {
-        order: 1;
-    }
-
-    .welcome-section {
-        order: 2;
-        margin: calc(var(--space)) 0;
-    }
-
-    .links-section {
-        order: 3;
-        padding: 0 calc(var(--space) * 0.5);
-    }
-
-    .links-grid {
-        grid-template-columns: 1fr;
-        gap: calc(var(--space));
-        max-width: 600px;
-        margin: 0 auto calc(var(--space) * 2);
-    }
-
-    .social-item {
-        min-width: unset;
-        width: 100%;
-        margin: 0;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .links-grid {
-        gap: calc(var(--space) * 0.75);
-    }
-
-    .social-item {
-        padding: calc(var(--space) * 0.4);
-    }
-
-    .social-item h3 {
-        font-size: 0.85rem;
-        margin-bottom: 2px;
-    }
-
-    .social-item p {
-        font-size: 0.75rem;
-        margin: 0;
-    }
-}
 
 /* Update the voice acting background styles */
 body.voice-acting {
@@ -744,18 +810,6 @@ body.voice-acting::after {
     z-index: 1;
 }
 
-@media (max-width: 768px) {
-    body.voice-acting {
-        background-size: auto 100vh;
-    }
-}
-
-@media (max-width: 480px) {
-    body.voice-acting {
-        background-size: auto 100vh;
-    }
-}
-
 /* Fix bottom section styling */
 .bottom-section {
     width: auto;
@@ -767,21 +821,16 @@ body.voice-acting::after {
 .bottom-section .links-section {
     margin: 0;
     padding: 0;
-    max-width: 300px;
+    max-width: 100%;
 }
 
 /* Ensure consistent social-item styling */
 .social-item {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-@media (max-width: 768px) {
-    .bottom-section .links-section {
-        max-width: 600px;
-        width: 100%;
-    }
+    width: auto;
+    min-width: 200px;
+    max-width: 250px;
+    flex: 0 1 auto;
+    margin: 0;
 }
 
 /* Navigation specific styles */
@@ -860,3 +909,50 @@ body.voice-acting::after {
 .footer a:hover {
     color: var(--primary-glow);
 }
+
+/* Update social item hover effects */
+.social-item {
+    backdrop-filter: blur(5px);
+    background: var(--glass-bg);
+    border-radius: var(--radius);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.2);
+    color: var(--primary);
+    display: block;
+    min-width: 200px;
+    max-width: 300px;
+    padding: calc(var(--space) * 0.75) calc(var(--space));
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: var(--transition);
+    width: 100%;
+    z-index: 1;
+}
+
+.social-item:hover {
+    background: var(--text);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
+    color: var(--bg-dark);
+    transform: scale(1.05);
+    z-index: 1001;
+}
+
+/* Remove translateX from hover effect */
+.top-section .social-item:hover {
+    transform: scale(1.05);
+}
+
+/* Update bottom section social item hover */
+.bottom-section .social-item:hover {
+    transform: scale(1.05);
+}
+
+/* Update social-item-vo hover */
+.social-item-vo:hover {
+    background: var(--text);
+    box-shadow: 0 0 50px rgba(164, 160, 185, 0.4);
+    color: var(--bg-dark);
+    transform: scale(1.05);
+    z-index: 1001;
+}
+

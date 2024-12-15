@@ -900,6 +900,7 @@ body.voice-acting::after {
 .nav-links-grid a:hover i {
     filter: drop-shadow(0 0 12px rgba(146, 62, 191, 0.6))
            drop-shadow(0 0 4px rgba(146, 62, 191, 0.4));
+    transform: scale(1.2);
 }
 
 .footer a {

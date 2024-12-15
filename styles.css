@@ -203,6 +203,7 @@ body.voice-acting::after {
     opacity: 0.8;
     transition: var(--transition);
     filter: drop-shadow(0 0 8px rgba(146, 62, 191, 0.4));
+    font-size: 1.5rem;
 }
 
 .tech-icon-wrapper:hover .tech-icon {

@@ -758,7 +758,7 @@ body.voice-acting::after {
 
 /* Fix bottom section styling */
 .bottom-section {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     margin-bottom: calc(var(--space) * 2);
@@ -789,7 +789,6 @@ body.voice-acting::after {
     position: relative;
     z-index: 10;
     width: 100%;
-    backdrop-filter: blur(5px);
     padding: calc(var(--space) * 0.5);
 }
 
@@ -850,4 +849,14 @@ body.voice-acting::after {
 .nav-links-grid a:hover i {
     filter: drop-shadow(0 0 12px rgba(146, 62, 191, 0.6))
            drop-shadow(0 0 4px rgba(146, 62, 191, 0.4));
+}
+
+.footer a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer a:hover {
+    color: var(--primary-glow);
 }

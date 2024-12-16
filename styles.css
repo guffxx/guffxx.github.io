@@ -633,6 +633,22 @@ body.voice-acting::after {
         font-size: 1rem;
         margin-bottom: calc(var(--space) * 0.5);
     }
+
+    .top-section .links-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: calc(var(--space));
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .top-section .social-item {
+        width: 100%;
+        min-width: unset;
+       margin: 0;
+    }
 }
 
 /* Small mobile device adjustments
@@ -670,9 +686,9 @@ body.voice-acting::after {
     }
 
     /* Layout spacing adjustments for small screens */
-    .top-buttons,
     .links-grid {
         gap: calc(var(--space) * 0.25);
+
     }
 
     .top-section {

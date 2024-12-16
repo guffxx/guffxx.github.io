@@ -532,7 +532,7 @@ body.voice-acting::after {
         gap: calc(var(--space) * 0.5);
         width: 100%;
         order: 1;
-        margin: calc(var(--space)) 0;
+        margin: calc(var(--space) * 0.5) 0;
     }
 
     .bottom-section .links-section {
@@ -646,6 +646,10 @@ body.voice-acting::after {
         width: 100%;
         min-width: unset;
        margin: 0;
+    }
+
+    .socials-links-grid {
+        margin-top: calc(var(--space) * 0.5);
     }
 }
 
@@ -763,7 +767,7 @@ body.voice-acting::after {
     align-items: center;
     justify-content: center;
     max-width: 600px;
-    margin: calc(var(--space) * 2) auto 0;
+    margin: calc(var(--space)) auto 0;
     padding: calc(var(--space));
     width: 100%;
     order: 3;

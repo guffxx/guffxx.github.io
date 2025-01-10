@@ -233,6 +233,7 @@ body.voice-acting::after {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: calc(var(--space) * 0.25);
 }
 
@@ -245,6 +246,7 @@ body.voice-acting::after {
     margin: 0 auto calc(var(--space) * 2);
     object-fit: contain;
     position: relative;
+    justify-content: center;
     width: min(90vw, 700px);
 }
 

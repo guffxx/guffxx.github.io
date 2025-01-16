@@ -443,7 +443,7 @@ body.voice-acting::after {
     color: var(--text);
     font-size: 1.1rem;
     letter-spacing: 0.3px;
-    line-height: 1.6;
+    line-height: 1.2;
     margin: 0 auto;
     max-width: 600px;
     text-shadow: var(--text-shadow);

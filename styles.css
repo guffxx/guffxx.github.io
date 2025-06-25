@@ -216,55 +216,12 @@ h1  {
 
 /* Icon Container */
 .icon-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: calc(var(--space) * 0.25);
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: var(--space);
-    margin-bottom: var(--space);
-    border: 1px solid var(--glass-border);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border-radius: var(--radius);
-    background: var(--glass-bg);
-    backdrop-filter: blur(var(--backdrop-blur));
-    -webkit-backdrop-filter: blur(var(--backdrop-blur));
-}
-
-.tech-icon-wrapper {
-    position: relative;
-    cursor: pointer;
-    padding: 2px;
-}
-
-.tech-icon {
-    width: 40px;
-    height: 40px;
-    opacity: 0.8;
-    transition: var(--transition);
-    filter: drop-shadow(0 0 8px rgba(146, 62, 191, 0.4));
-}
-
-.tech-icon-wrapper:hover .tech-icon {
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 12px rgba(146, 62, 191, 0.6))
-           drop-shadow(0 0 4px rgba(146, 62, 191, 0.4));
-}
-
-.tech-icon-wrapper:hover::after {
-    content: attr(title);
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--glass-bg);
-    color: var(--text);
-    padding: 4px 8px;
-    border-radius: var(--radius);
-    font-size: 0.75rem;
-    white-space: nowrap;
-    backdrop-filter: blur(5px);
-    z-index: 1000;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Profile Container */
@@ -717,12 +674,6 @@ h1  {
         max-width: 180px;
     }
     
-    /* Tech icon size adjustments */
-    .tech-icon {
-        width: 35px;
-        height: 35px;
-    }
-
     /* Layout spacing adjustments for small screens */
     .links-grid {
         gap: calc(var(--space) * 0.25);

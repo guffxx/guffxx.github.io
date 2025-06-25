@@ -123,6 +123,12 @@ footer {
 }
 
 /* Voice Acting Page Specifics */
+.vo-intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .audio-demos {
     display: flex;
     flex-direction: column;
@@ -172,5 +178,16 @@ footer {
 
     section {
         padding: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .vo-intro-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .vo-intro-content > section {
+        flex: 1;
     }
 }

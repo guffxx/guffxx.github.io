@@ -21,7 +21,7 @@ body {
     line-height: 1.4;
     font-weight: 300;
     font-size: 1.5rem;
-    background-color: var(--bg);
+    background-color: rgba(0, 0, 0, 0.5);
     background-image: url('https://imgur.com/a/1YBjl4U');
     color: var(--text-color);
     display: flex;

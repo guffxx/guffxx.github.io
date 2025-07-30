@@ -168,7 +168,7 @@ footer {
     border-radius: 8px;
 }
 
-.corner-gif {
+.bmo-gif {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -179,7 +179,7 @@ footer {
     transition: opacity 0.3s;
 }
 
-.corner-gif:hover {
+.bmo-gif:hover {
     opacity: 1;
 }
 

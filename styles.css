@@ -21,8 +21,7 @@ body {
     line-height: 1.4;
     font-weight: 300;
     font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('https://imgur.com/a/1YBjl4U');
+    background-color: var(--bg);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
@@ -167,6 +166,21 @@ footer {
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: 8px;
+}
+
+.corner-gif {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 1000;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.corner-gif:hover {
+    opacity: 1;
 }
 
 /* Responsive Design */
